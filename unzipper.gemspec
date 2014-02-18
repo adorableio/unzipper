@@ -6,11 +6,11 @@ require 'unzipper/version'
 Gem::Specification.new do |spec|
   spec.name          = 'unzipper'
   spec.version       = Unzipper::VERSION
-  spec.authors       = ['Mark McEahern']
-  spec.email         = ['mark@mceahern.com']
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ''
+  spec.authors       = ['Mark McEahern', 'Jim Remsik']
+  spec.email         = ['mark@adorable.io', 'jim@adorable.io']
+  spec.description   = %q{unzipper unzips to S3}
+  spec.summary       = %q{unzipper unzips to S3}
+  spec.homepage      = 'http://github.com/adorableio/unzipper'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
