@@ -54,6 +54,10 @@ module Unzipper
       send(option)
     end
 
+    # Allows config options to be set like a hash
+    #
+    # @param [Symbol] option Key for a given attribute
+    # @param [String] value Value for a given attribute
     def []=(option, value)
       setter = (option.to_s + "=").to_sym
       send(setter, value)
@@ -116,8 +120,8 @@ module Unzipper
     # Output the current configuration as a String
     def to_s
       prefix = "<Unzipper::Configuration "
-      postfix = ">"
       fields = OPTIONS.map{|opt| opt.to_s+"=\""+self.send(opt)+"\""}.join(" ")
+      postfix = ">"
       prefix + fields + postfix
     end
   end
