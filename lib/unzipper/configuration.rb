@@ -89,6 +89,7 @@ module Unzipper
           raise InvalidOptionsError.new(self), "missing required option '#{option.to_s}'"
         end
       end
+      true
     end
 
     # Formats the configuration as a hash that can be submitted as the metadata portion
