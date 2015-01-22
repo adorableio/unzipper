@@ -1,0 +1,8 @@
+Description:
+  Sets up Unzipper in your Rails project. Creates a new initializer under config/initializers used to configure access
+  to the Unzipper.io service.
+
+Examples:
+  `bin/rails generate unzipper:install`
+
+  `bin/rails generate unzipper:install --help`
